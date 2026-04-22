@@ -1,0 +1,75 @@
+{
+  "n_runs": 648,
+  "datasets": [
+    "breast_cancer",
+    "spambase",
+    "synthetic"
+  ],
+  "attacks": [
+    "label_flip",
+    "targeted_flip",
+    "feature_collision",
+    "backdoor"
+  ],
+  "poison_rates": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "best_defense_by_score": "hybrid",
+  "ranking": [
+    {
+      "defense": "hybrid",
+      "clean_acc": 0.8908958699756389,
+      "asr": 0.25783425044417785,
+      "det_f1": 0.20781190929756355,
+      "fit_time_sec": 0.5096955873348095,
+      "score": 0.633061619531461
+    },
+    {
+      "defense": "anomaly_iforest",
+      "clean_acc": 0.8941473309056813,
+      "asr": 0.2628645368676673,
+      "det_f1": 0.20075482806319284,
+      "fit_time_sec": 0.21828587187661064,
+      "score": 0.631282794038014
+    },
+    {
+      "defense": "trimmed_loss",
+      "clean_acc": 0.8941795073475098,
+      "asr": 0.2805576208242511,
+      "det_f1": 0.40132258481131083,
+      "fit_time_sec": 0.029217569916336623,
+      "score": 0.6136218865232588
+    },
+    {
+      "defense": "anomaly_lof",
+      "clean_acc": 0.8942048169948336,
+      "asr": 0.2935764709979857,
+      "det_f1": 0.14365926841934826,
+      "fit_time_sec": 0.026909066571129694,
+      "score": 0.6006283459968479
+    },
+    {
+      "defense": "none",
+      "clean_acc": 0.8905284323125343,
+      "asr": 0.32398559401888205,
+      "det_f1": 0.0,
+      "fit_time_sec": 0.005462818675571018,
+      "score": 0.5665428382936523
+    },
+    {
+      "defense": "roni",
+      "clean_acc": 0.8848920070564879,
+      "asr": 0.3261926952357474,
+      "det_f1": 0.15650582234310628,
+      "fit_time_sec": 0.34178598942580046,
+      "score": 0.5586993118207404
+    }
+  ]
+}
